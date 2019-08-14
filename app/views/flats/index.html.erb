@@ -1,0 +1,28 @@
+
+<h1>All our Flats:</h1>
+<div class="big_container">
+  <li><%= link_to "Add Flat", "flats/new", class: "btn"%></li>
+  <% @flats.each do |flat| %>
+    <div class="container">
+      <div class="content">
+        <h2 class="title"><%=flat.name%></h2>
+        <p class="address"><em><%=flat.address%></em></p>
+      </div>
+ <!--      <p class="description"><%=flat.description%></p> -->
+      <div class="info">
+        <p class="price"><i class="fas fa-euro-sign"></i> <strong><%=flat.price_per_night%></strong></p>
+        <p class="guests"><i class="fas fa-user-friends"></i> <strong><%=flat.number_of_guests%></strong></p>
+      </div>
+      <div class="action">
+        <ul class="action_list">
+          <li><%= link_to "More info", flat_path(flat), class: "btn"%></li>
+          <li><%= link_to "Edit", edit_flat_path(flat), class: "btn"%></li>
+          <li><%= link_to "Remove", flat_path(flat),
+            method: :delete,
+            data: { confirm: "Are you sure?" },
+            class: "btn" %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+</div>

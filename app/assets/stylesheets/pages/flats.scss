@@ -1,0 +1,92 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h2{
+  font-size: 15px;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.action_list{
+  margin: 0;
+  padding: 5px 0;
+}
+
+li{
+  display: inline;
+  padding: 10px;
+}
+
+// .big_container{
+//   width: 900px;
+//   margin: 0 auto;
+// }
+
+.container{
+  // border: 1px solid black;
+  width: 300px;
+  padding: 0;
+  margin: 20px auto;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.show_container{
+  width: 700px;
+  padding: 10px;
+  margin: 20px auto;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  background: #eaeaea;
+}
+
+.form_container{
+  width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  padding: 10px;
+}
+
+.content{
+  background: #eaeaea;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.info{
+  background: #eaeaea;
+  padding: 10px;
+  padding-top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.action{
+  background: white;
+  padding-top: 20px;
+  padding: 5px;
+  text-align: center;
+  height: 80px;
+}
+
+.address{
+  margin: 0;
+}
+
+.title{
+  font-size: 20px;
+}
+
+.btn{
+  text-decoration: none;
+  background: #a4d7e1;
+  color: white;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.form-group{
+  padding: 10px;
+}
